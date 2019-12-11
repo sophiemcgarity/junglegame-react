@@ -32,6 +32,7 @@ export const PAGES = [
         story: "Hello my name is {player}. The stranger greets you warmly. “My name is Nigel and you lucky adventurers have been chosen to lift the curse on Jumanji. You must take this jewel to the jaguar statue”. He hands you a jewel. “And here take this map, sorry its torn but maybe you can find the other part” he adds. You take the map. “Well this is your stop, good luck out there” Nigel says as he waves goodbye. You get out of the car and discuss what to do.",
         image: "/assets/images/jeep.jpg",
         button1: "This is too hard, lets just go home.",
+
         button2: "I want to save Jumanji",
     },
     {
