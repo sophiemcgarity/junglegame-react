@@ -5,6 +5,7 @@ import Background from './BackgroundComponent';
 import { AVATARS } from '../shared/avatars';
 import { PAGES } from '../shared/pages';
 import GamePage from './GamePageComponent';
+import RenderButtons from './ButtonsComponent';
 
 class Main extends Component {
     constructor(props){
@@ -26,9 +27,20 @@ class Main extends Component {
     //     this.setState({selectedPage: pageId});
     // }
 
+    renderSelectedButton(button) {
+        if (button) {
+            return (
+                <RenderButtons />
+            )
+        }
 
+        return <div />;
+    }
+    
+    
 
     render() {
+        
         return (
 
             <div>
@@ -42,9 +54,9 @@ class Main extends Component {
                 {/* <GamePage page={this.state.pages.filter(page => page.id === this.state.selectedPage)[0]} /> */}
                 <GamePage />
                 
-                
             </div>
-        );
+        )
+
     }
 }
 
