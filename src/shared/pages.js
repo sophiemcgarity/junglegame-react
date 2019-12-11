@@ -1,4 +1,4 @@
-export const PAGE = [
+export const PAGES = [
     {
         id: "start",
         story: "You wake up and find yourself in a jungle surrounded by three equally confused people. You see their names floating above their heads. You look up and see your own name, {player}. ",
