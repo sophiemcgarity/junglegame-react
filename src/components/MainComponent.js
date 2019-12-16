@@ -6,7 +6,10 @@ import GamePage from './GamePageComponent';
 import { AVATARS } from '../shared/avatars';
 import { PAGES } from '../shared/pages';
 import Buttons from './ButtonsComponent';
-//import { Switch, Route, Redirect } from 'react-router-dom';
+import Story from './StoryComponent';
+import { Switch, Route} from 'react-router-dom';
+import { Button, Nav, NavItem, NavLink } from 'reactstrap';
+
 
 class Main extends Component {
     constructor(props) {
@@ -33,16 +36,22 @@ class Main extends Component {
 
         return (
             <React.Fragment>
-                
-                <Background />
                 <h1>Jungle Game</h1>
                 <p className="aboutGame">A Game For Those Who Seek To Find... A Way To Leave Their World Behind</p>
                 <AvatarDirectory avatars={this.state.avatars} onClick={avatarId => this.onAvatarSelect(avatarId)} />
                 <AvatarInfo avatar={this.state.avatars.filter(avatar => avatar.id === this.state.selectedAvatar)[0]} />
                 {/* <GamePage page={this.state.pages.filter(page => page.id === this.state.selectedPage)[0]} /> */}
-                <GamePage />
-                <Buttons pages={this.state.pages}/>
                 
+                <Nav>
+                    <NavItem>
+                        <NavLink to="/gamepage">
+                            <Button>Start</Button>
+                        </NavLink>
+                    </NavItem>
+                </Nav>
+
+                <GamePage pages={this.state.pages}/>
+
             </React.Fragment>
         )
     }

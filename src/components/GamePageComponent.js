@@ -1,21 +1,24 @@
 import React, { Component } from 'react';
-//import AvatarDirectory from './AvatarDirectoryComponent';
-//import AvatarInfo from './AvatarInfoComponent';
-//import { AVATARS } from '../shared/avatars';
 import Background from './BackgroundComponent';
 import Story from './StoryComponent';
-//import Buttons from './ButtonsComponent';
+import Buttons from './ButtonsComponent';
 
 
 
 class GamePage extends Component {
+    constructor(props) {
+        super(props);
+    }
     render(){
     return(
-        <div>
-            <Background />
-            <Story />
+        <React.Fragment>
+               
             
-        </div>
+            <Background />
+            <Story pages={this.props.pages}/> 
+            <Buttons pages={this.props.pages} />
+            
+        </React.Fragment>
     );
 }
 }
