@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap';
-import { AVATARS } from '../shared/avatars';
+import { Card, CardImg, CardBody, CardTitle } from 'reactstrap';
+//import { AVATARS } from '../shared/avatars';
 
 
 

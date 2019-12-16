@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import AvatarDirectory from './AvatarDirectoryComponent';
-import AvatarInfo from './AvatarInfoComponent';
-import { AVATARS } from '../shared/avatars';
+import React, {  } from 'react';
+//import AvatarDirectory from './AvatarDirectoryComponent';
+//import AvatarInfo from './AvatarInfoComponent';
+//import { AVATARS } from '../shared/avatars';
 
 
 const Background = () => {
@@ -9,4 +9,5 @@ const Background = () => {
         <div className="bg"></div>
     );
   }
+
 export default Background;
