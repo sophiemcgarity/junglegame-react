@@ -3,7 +3,7 @@ import GamePage from './GamePageComponent';
 import { AVATARS } from '../shared/avatars';
 import { PAGES } from '../shared/pages';
 import Home from './HomeComponent';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 
 
@@ -34,11 +34,12 @@ class Main extends Component {
         return (
             <React.Fragment>
                 <Switch>
-                    <Route path='/home' render={() => <Home />} />
-                    <Route path='/gamepage' render={() => <GamePage pages={this.state.pages} />} />
-                </Switch>
+                    <Route exact path='/home' render={() => <Home pages={this.state.pages}/>} />
 
-                <Home pages={this.state.pages} />
+                    <Route exact path='/gamepage' render={() => <GamePage pages={this.state.pages} />} />
+
+                    <Redirect to='/home' render={() => <Home pages={this.state.pages}/>} />
+                </Switch>  
             </React.Fragment>
         )
     }
