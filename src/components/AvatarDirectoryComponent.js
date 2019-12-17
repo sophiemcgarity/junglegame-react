@@ -5,8 +5,6 @@ import { Card, CardImg, CardBody, CardTitle } from 'reactstrap';
 
 
 class AvatarDirectory extends Component {
-    
-    
 
     render() {
         const directory = this.props.avatars.map(avatar => {

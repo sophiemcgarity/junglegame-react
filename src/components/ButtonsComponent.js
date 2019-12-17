@@ -7,21 +7,18 @@ class Buttons extends Component {
     constructor(props) {
         super(props);
       }
-
-      //use avatar select as example for ID targeting
-    
-
-    render() {
+      render(){
 
         /*
         const story = this.props.pages.filter(val => val.id === this.props.pageWithId);
         
         const renderButton = story.map(i => i.button1);
-        */
+         */
         
         const story = this.props.pages.filter(val => val.id === "start");
         const renderButton = story.map(i => i.button1);
         
+
         return(
             <React.Fragment>
                 <div className="container">
@@ -33,6 +30,7 @@ class Buttons extends Component {
                 </div>               
             </React.Fragment>
         )
+       
     }
 }
 

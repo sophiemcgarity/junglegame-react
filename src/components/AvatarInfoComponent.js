@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
-
 class AvatarInfo extends Component {
+    constructor(props) {
+        super(props);
+    }
+
 
     renderAvatar(avatar){
         return(
-
             <div className="col-md-5 m-1">
                 <Card onClick={() => this.onAvatarSelect(avatar)}>
                     <CardImg width="30px" height="100%" src={avatar.image} alt={avatar.name} />
@@ -22,6 +24,7 @@ class AvatarInfo extends Component {
             <div className="col-md-5 m-1">
                 <Card onClick={() => this.onAvatarSelect(avatar)}>
                     <CardTitle>
+                        {console.log("clicked")}
                         <h2>{avatar.name}</h2>
                     </CardTitle>
                         <CardBody>

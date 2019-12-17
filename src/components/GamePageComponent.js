@@ -27,6 +27,7 @@ class GamePage extends Component {
             </React.Fragment>
         );
     }
+    
 }
 
 export default GamePage;
