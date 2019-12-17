@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { Container, Row, Col } from 'reactstrap';
 
 
 class Story extends Component {
     constructor(props) {
         super(props);
-      }
+    }
 
     render() {
 
@@ -12,15 +13,10 @@ class Story extends Component {
         const renderText = story.map(i => i.story);
 
         return (
-            <div className="container" >
-                <div className="row align-items-center">
-                    <div className="col-3 align-item-center" style={{ border: "2px green solid" }}>
-                        {renderText}
-                    </div>
-                </div>
+            <div className="storyText">
+                {renderText}
             </div>
-
-        );
+        )
     }
 
 }

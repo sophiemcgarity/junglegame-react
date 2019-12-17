@@ -27,9 +27,12 @@ class Main extends Component {
         this.setState({ selectedAvatar: avatarId });
     }
 
-    // onPageSelect(pageId){
-    //     this.setState({selectedPage: pageId});
-    // }
+    /*
+
+    onPageSelect(pageId){
+         this.setState({selectedPage: pageId});
+    }
+    */
     
 
     render() {
@@ -40,7 +43,9 @@ class Main extends Component {
                 <p className="aboutGame">A Game For Those Who Seek To Find... A Way To Leave Their World Behind</p>
                 <AvatarDirectory avatars={this.state.avatars} onClick={avatarId => this.onAvatarSelect(avatarId)} />
                 <AvatarInfo avatar={this.state.avatars.filter(avatar => avatar.id === this.state.selectedAvatar)[0]} />
-                {/* <GamePage page={this.state.pages.filter(page => page.id === this.state.selectedPage)[0]} /> */}
+                
+                <GamePage pages={this.state.pages}/>
+                
                 
                 <Nav>
                     <NavItem>
@@ -50,13 +55,13 @@ class Main extends Component {
                     </NavItem>
                 </Nav>
 
-                <GamePage pages={this.state.pages}/>
+               
 
             </React.Fragment>
         )
     }
 }
-
+//<GamePage page={this.state.pages.filter(page => page.id === this.state.selectedPage)[0]} /> 
 
 
 export default Main;

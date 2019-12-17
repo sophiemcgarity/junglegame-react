@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+img.bg {
+  min-width: 100%;
+  min-width: 1024px;
+
+  width: 100%;
+  height: auto;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.storyText{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+}
