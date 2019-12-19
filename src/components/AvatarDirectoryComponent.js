@@ -1,39 +1,52 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap';
-import { AVATARS } from '../shared/avatars';
+import { Card, CardImg, CardBody, CardTitle, CardText } from 'reactstrap';
+import AvatarInfo from './AvatarInfoComponent';
+//import { AVATARS } from '../shared/avatars';
 
+function RenderDirectoryItem({avatar, onClick}){
+    return (
+        <Card onClick={()=> onClick(avatar.id)} className="bg-success" >
+            <CardImg style={{width: "100%", height: "30vw", objectFit: "cover"}} src={avatar.image} alt={avatar.name} />
+                <CardTitle>
+                    {avatar.name}
+                </CardTitle>
+                    <CardBody>
+                        <p>{avatar.description}</p>
+                    </CardBody>
+        </Card>
 
+    );
 
-class AvatarDirectory extends Component {
+}
+
+function AvatarDirectory(props) {
     
-    
-
-    render() {
-        const directory = this.props.avatars.map(avatar => {
+        const directory = props.avatars.map(avatar => {
             return (
-                <div key={avatar.id} style={{border: "solid  #09d3ac 2px"}} className="col-sm m-1">
-                    <Card onClick={() => this.props.onClick(avatar.id)}>
-                        <CardImg width="30px" src={avatar.image} alt={avatar.name} />
-                
-                            <CardTitle>
-                                {avatar.name}
-                            </CardTitle>
-                                <CardBody><p>{avatar.description}</p></CardBody>
-                    </Card>
+                <div  key={avatar.id} className="col-sm m-1">
+                    <RenderDirectoryItem avatar={avatar} onClick={props.onClick} />
                 </div>
             );
         });
         return (
             <div className="container">
-                <h3>Choose A Character</h3>
+                <h3 className="homeText">Choose A Character</h3>
                 <div className="row">
                         {directory}
                 </div>
+                {/* <div className="row ">
+                    <div className="col-sm-4">
+                        {this.renderSelectedAvatar(this.state.selectedAvatar)}
+
+                    </div>
+
+                </div> */}
+               
                 
                 
             </div>
         );
     }
-}
+
 
 export default AvatarDirectory;

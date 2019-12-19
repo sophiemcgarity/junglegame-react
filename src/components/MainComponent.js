@@ -1,51 +1,52 @@
 import React, { Component } from 'react';
-import AvatarDirectory from './AvatarDirectoryComponent';
-import AvatarInfo from './AvatarInfoComponent';
-import Background from './BackgroundComponent';
+import GamePage from './GamePageComponent';
 import { AVATARS } from '../shared/avatars';
 import { PAGES } from '../shared/pages';
-import GamePage from './GamePageComponent';
+import Home from './HomeComponent';
+import { Switch, Route, Redirect } from 'react-router-dom';
+
+
 
 class Main extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state ={
+
+        this.state = {
             avatars: AVATARS,
-            selectedAvatar: null,
+            //selectedAvatar: null,
             pages: PAGES,
-            selectedPage: 0 
-           
-        };
+            selectedPage: 0
+        }
+
     }
 
-    onAvatarSelect(avatarId){
-        this.setState({selectedAvatar: avatarId});
+
+    // onAvatarSelect(avatar) {
+    //     this.setState({ selectedAvatar: avatar });
+    //   }
+    /*
+    onPageSelect(pageId){
+         this.setState({selectedPage: pageId});
     }
-
-    // onPageSelect(pageId){
-    //     this.setState({selectedPage: pageId});
-    // }
-
+    */
 
 
     render() {
-        return (
 
-            <div>
-                console.log("page: " + this.state.pages.filter(page => page.id === this.state.selectedPage)[0]});
-                <Background />
-                <h1>Jungle Game</h1>
-                
-                <p className="aboutGame">A Game For Those Who Seek To Find... A Way To Leave Their World Behind</p>
-                <AvatarDirectory  avatars={this.state.avatars} onClick={avatarId => this.onAvatarSelect(avatarId)}/>
-                <AvatarInfo avatar={this.state.avatars.filter(avatar => avatar.id === this.state.selectedAvatar)[0]} />
-                {/* <GamePage page={this.state.pages.filter(page => page.id === this.state.selectedPage)[0]} /> */}
-                <GamePage />
-                
-                
-            </div>
-        );
+        return (
+            <React.Fragment>
+                <Switch>
+                    <Route exact path='/home' render={() => <Home pages={this.state.pages} avatars={this.state.avatars}/>} />
+
+                    <Route exact path='/gamepage' render={() => <GamePage pages={this.state.pages} />} />
+
+                    <Redirect to='/home' render={() => <Home pages={this.state.pages}/>} />
+                </Switch>  
+            </React.Fragment>
+        )
     }
 }
+//<GamePage page={this.state.pages.filter(page => page.id === this.state.selectedPage)[0]} /> 
+
 
 export default Main;

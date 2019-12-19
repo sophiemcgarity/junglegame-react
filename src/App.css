@@ -16,6 +16,9 @@ h1{
 
 .aboutGame {
   font-family: 'Courier Prime', monospace;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+
 }
 
 .bg{
