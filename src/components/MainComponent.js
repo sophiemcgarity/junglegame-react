@@ -3,6 +3,7 @@ import GamePage from './GamePageComponent';
 import { AVATARS } from '../shared/avatars';
 import { PAGES } from '../shared/pages';
 import Home from './HomeComponent';
+import SelectedAvatarDisplay from './SelectedAvatarDisplayComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 
@@ -13,22 +14,22 @@ class Main extends Component {
 
         this.state = {
             avatars: AVATARS,
-            //selectedAvatar: null,
+            selectedAvatar: null,
             pages: PAGES,
             selectedPage: 0
         }
 
     }
 
+    onAvatarSelect(avatarId) {
+        this.setState({ selectedAvatar: avatarId });
+      }
 
-    // onAvatarSelect(avatar) {
-    //     this.setState({ selectedAvatar: avatar });
-    //   }
-    /*
-    onPageSelect(pageId){
-         this.setState({selectedPage: pageId});
-    }
-    */
+
+    // onPageSelect(pageId){
+    //      this.setState({selectedPage: pageId});
+    // }
+    // */
 
 
     render() {
@@ -36,9 +37,11 @@ class Main extends Component {
         return (
             <React.Fragment>
                 <Switch>
-                    <Route exact path='/home' render={() => <Home pages={this.state.pages} avatars={this.state.avatars}/>} />
+                    <Route exact path='/home' render={() => <Home pages={this.state.pages} avatars={this.state.avatars} selectedAvatar={this.state.selectedAvatar} 
+                    onClick={avatarId => this.onAvatarSelect(avatarId)} avatar={this.state.avatars.filter(avatar => avatar.id === this.state.selectedAvatar)[0]}
+                    />} />
 
-                    <Route exact path='/gamepage' render={() => <GamePage pages={this.state.pages} />} />
+                    <Route exact path='/gamepage' render={() => <GamePage pages={this.state.pages} avatars={this.state.avatars} selectedAvatar={this.state.selectedAvatar}/>} />
 
                     <Redirect to='/home' render={() => <Home pages={this.state.pages}/>} />
                 </Switch>  
@@ -46,7 +49,7 @@ class Main extends Component {
         )
     }
 }
-//<GamePage page={this.state.pages.filter(page => page.id === this.state.selectedPage)[0]} /> 
+
 
 
 export default Main;

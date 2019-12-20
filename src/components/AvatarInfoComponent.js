@@ -1,26 +1,27 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle, Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 
     function RenderAvatar({avatar}){
         return(
-            <div className="col-md-5 m-1">
-                <Card className="bg-success">
-                    <CardImg width="30px" height="100%" src={avatar.image} alt={avatar.name} />
-                    <CardTitle>
-                        {console.log("clicked")}
+            <div className="row bgrow align-items-center">
+                <div className="col-sm-4">
+                    <img className="img-fluid" src={avatar.image} alt={avatar.name} />
+                </div>
+                <div className="col-sm-4 homeText">
                         <h2>{avatar.name}</h2>
-                    </CardTitle>
-                        <CardBody>
-                            <CardText>
-                                <p>{avatar.description}</p>
-                                <p><strong>strengths: </strong> {avatar.strengths}</p>
-                                <p><strong>weaknesses: </strong> {avatar.weaknesses}</p>
-                                </CardText>
-                                <button className="btn-lg btn-primary m-3">Confirm</button>
-                        </CardBody>
-                </Card>
+                        <p>{avatar.description}</p>
+                        <p><strong>Strengths: </strong>{avatar.strengths}</p>
+                        <p><strong>Weaknesses: </strong>{avatar.weaknesses}</p>
+                </div>
+                <div className="col-sm-4">
+                    <Button className="btn btn-success btn-lg m-2"><Link className="text-white" to='/home'><h3>Go Back</h3></Link></Button>
+                    <Button className="btn btn-success btn-lg m-2"><Link className="text-white" to='/gamepage'><h3 >Start</h3></Link></Button>
+                    
+                </div>
             </div>
+        
         );
     }
 
@@ -31,7 +32,6 @@ import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
             <div className="col-md-5 m-1">
                 <Card className="bg-success">
                     <CardTitle>
-                        {console.log("clicked")}
                         <h2>{avatar.name}</h2>
                     </CardTitle>
                         <CardBody>
@@ -57,7 +57,7 @@ import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
                 <div className="container">
                     <div className="row">
                         <RenderAvatar avatar={props.avatar}/>
-                        <RenderAvatarData avatar={props.avatar}/>
+                        {/* <RenderAvatarData avatar={props.avatar}/> */}
                     </div>
                 </div>
             );
