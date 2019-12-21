@@ -27,6 +27,9 @@ img.bg {
 
 .storyText{
   color: white;
-  background-color: rgba(0, 0, 0, 0.6);
-  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  margin-top: 50%;
+  padding: 2%;
+  margin-bottom: 20px;
 }

@@ -10,6 +10,11 @@ class GamePage extends Component {
     constructor(props) {
         super(props);
     }
+
+    onPageSelect(pageId){
+        this.setState({selectedPage: pageId});
+   }
+
     render() {
         return (
             <React.Fragment>

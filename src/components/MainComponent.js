@@ -14,20 +14,11 @@ class Main extends Component {
         this.state = {
             avatars: AVATARS,
             selectedAvatar: null,
-            pages: PAGES,
-            selectedPage: 0
+            pages: PAGES
         }
-
     }
 
-
-    /*
-
-    onPageSelect(pageId){
-         this.setState({selectedPage: pageId});
-    }
-    */
-
+    
 
     render() {
 
@@ -44,7 +35,8 @@ class Main extends Component {
         )
     }
 }
-//<GamePage page={this.state.pages.filter(page => page.id === this.state.selectedPage)[0]} /> 
+//<GamePage page={this.state.pages.filter(page => page.id === this.state.selectedPage)[0]} /> } />
+// <GamePage pages={this.state.pages} />} />
 
 
 export default Main;

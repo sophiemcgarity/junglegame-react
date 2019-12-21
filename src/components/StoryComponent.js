@@ -7,6 +7,8 @@ class Story extends Component {
         super(props);
     }
 
+    
+
     render() {
 
         const story = this.props.pages.filter(val => val.id === "start");

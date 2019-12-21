@@ -6,28 +6,49 @@ import { Button } from 'reactstrap';
 class Buttons extends Component {
     constructor(props) {
         super(props);
-      }
-      render(){
 
+        this.state = {
+            selectedPage: 'start',
+        }
+      }
+
+      //map the page into a new component
+      //create an onClick() event that controls when the page changes
+      //change the state once the page changes, keep track of current page with id, or the current page
+      //map both buttons to the screen
+
+      changePage() {
+        this.setState({ selectedPage: this.props.pages.id})
+      }
+
+      render(){
         /*
         const story = this.props.pages.filter(val => val.id === this.props.pageWithId);
         
         const renderButton = story.map(i => i.button1);
          */
         
-        const story = this.props.pages.filter(val => val.id === "start");
-        const renderButton = story.map(i => i.button1);
+        const currentPage = this.props.pages.filter(val => val.id === this.state.selectedPage);
         
+        const button = currentPage.map(btn => {
+            return(
+                <div key={btn.id}>
+                    <Button onClick={this.changePage}>{btn.button1}</Button>
+                    <Button onClick={this.changePage}>{btn.button2}</Button>
+                </div>
+            )
+        })
 
         return(
             <React.Fragment>
                 <div className="container">
                     <div className="row">
                         <div className="col">
-                        <Button>{renderButton}</Button>
+                            {button}
                         </div>
                     </div>
-                </div>               
+                </div>
+                {console.log(this.state.selectedPage)}
             </React.Fragment>
         )
        
