@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
-import { Button } from 'reactstrap';
+
+//import React, { Component } from 'react';
+//import { Button } from 'reactstrap';
 //import { Link } from 'react-router-dom';
 
+/*
 
 class Buttons extends Component {
     constructor(props) {
@@ -22,11 +24,11 @@ class Buttons extends Component {
       }
 
       render(){
-        /*
+
+        ///////////////old stuff
         const story = this.props.pages.filter(val => val.id === this.props.pageWithId);
-        
         const renderButton = story.map(i => i.button1);
-         */
+        //////////////////////
         
         const currentPage = this.props.pages.filter(val => val.id === this.state.selectedPage);
         
@@ -56,3 +58,5 @@ class Buttons extends Component {
 }
 
 export default Buttons;
+
+*/
