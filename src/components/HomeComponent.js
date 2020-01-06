@@ -27,7 +27,7 @@ class Home extends Component {
                 <p className="aboutGame">A Game For Those Who Seek To Find... A Way To Leave Their World Behind</p>
                 <AvatarDirectory avatars={this.state.avatars} onClick={avatarId => this.onAvatarSelect(avatarId)} />
                 <AvatarInfo avatars={this.state.avatars.filter(avatar => avatar.id === this.state.selectedAvatar)[0]} />   
-                <Button><Link to='/gamepage'>Start</Link></Button>    
+                <Link to='/gamepage'>Start</Link> 
             </React.Fragment>
         )
     }

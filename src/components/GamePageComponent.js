@@ -4,21 +4,32 @@ import { Button } from 'reactstrap';
 class GamePage extends Component {
     constructor(props) {
         super(props);
+
+        this.state = {
+            selectedPage: 'start',
+        }
+    }
+
+    
+    changePage() {
+        this.setState({ selectedPage: this.state.pages.id })
     }
 
     render() {
-        const currentPage = this.props.pages.filter(val => val.id === this.props.selectedPage);
+        
+        const currentPage = this.props.pages.filter(val => val.id === this.state.selectedPage);
 
         const button = currentPage.map(btn => {
             return (
                 <div key={btn.id}>
-                    <Button onClick={this.props.changePage}>{btn.button1}</Button>
-                    <Button onClick={this.props.changePage}>{btn.button2}</Button>
+                    <Button onClick={this.changePage}>{btn.button1}</Button>
+                    <Button onClick={this.changePage}>{btn.button2}</Button>
                 </div>
             )
         })
 
-        const renderText = currentPage.map(i => i.currentPage);
+        
+        const renderText = currentPage.map(i => i.story)    ;
 
         const story = currentPage.map(s => {
             return (
@@ -29,6 +40,7 @@ class GamePage extends Component {
                 </div>
             )
         })
+        
 
         const renderBackground = currentPage.map(x => x.image);
 
@@ -39,6 +51,8 @@ class GamePage extends Component {
                 </div>
             )
         })
+        
+        
 
         return (
             <React.Fragment>
@@ -48,14 +62,14 @@ class GamePage extends Component {
                             {button}
                         </div>
                         <div className="col">
-                            {story}
+                           
                         </div>
                         <div className="col">
                             {background}
                         </div>
                     </div>
                 </div>
-                {console.log(this.state.selectedPage)}
+                {console.log(this.props.selectedPage)}
             </React.Fragment>
         );
     }
