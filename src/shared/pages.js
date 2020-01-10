@@ -1,7 +1,7 @@
 export const PAGES = [
     {
         id: "start",
-        story: "You wake up and find yourself in a jungle surrounded by three equally confused people. You see their names floating above their heads. You look up and see your own name, {player}. ",
+        story: "You wake up and find yourself in a jungle surrounded by three equally confused people. You see their names floating above their heads. You look up and see your own name floating above your head, {player}. ",
         image: "/assets/images/jungle.jpg",
         button1: "Begin the adventure!",
         button1Id: "river",

@@ -29,7 +29,7 @@ class GamePage extends Component {
         })
 
         
-        const renderText = currentPage.map(i => i.story)    ;
+        const renderText = currentPage.map(i => i.story);
 
         const story = currentPage.map(s => {
             return (
@@ -59,10 +59,10 @@ class GamePage extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col">
-                            {button}
+                            {story}
                         </div>
                         <div className="col">
-                           
+                            {button}
                         </div>
                         <div className="col">
                             {background}

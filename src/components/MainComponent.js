@@ -27,7 +27,7 @@ class Main extends Component {
 
                     <Route exact path='/gamepage' render={() => <GamePage pages={this.state.pages}/>} />
 
-                    {/* <Redirect to='/home' render={() => <Home pages={this.state.pages}/>} /> */}
+                    <Redirect to='/home' render={() => <Home pages={this.state.pages}/>} />
                 </Switch>  
             </React.Fragment>
         )
