@@ -5,7 +5,7 @@ import AvatarInfo from './AvatarInfoComponent';
 
 function RenderDirectoryItem({avatar, onClick}){
     return (
-        <Card onClick={()=> onClick(avatar.id)} className="bg-success" >
+        <Card onClick={()=> onClick(avatar.id)} className="bg-success flex-fill" >
             <CardImg style={{width: "100%", height: "30vw", objectFit: "cover"}} src={avatar.image} alt={avatar.name} />
                 <CardTitle>
                     {avatar.name}
@@ -23,7 +23,7 @@ function AvatarDirectory(props) {
     
         const directory = props.avatars.map(avatar => {
             return (
-                <div  key={avatar.id} className="col-10 col-sm-6 col-md-3 mb-2">
+                <div  key={avatar.id} className="col-10 col-sm-6 col-md-3 mb-2 d-flex">
                     <RenderDirectoryItem avatar={avatar} onClick={props.onClick} />
                 </div>
             );

@@ -32,3 +32,11 @@ h1{
   
 } 
 
+.imageCorner {
+  height: 70px;
+  width: 60;
+  border: 2px white solid;
+  border-radius: 50px;
+  margin: 10px;
+}
+

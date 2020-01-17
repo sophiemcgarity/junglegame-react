@@ -25,13 +25,23 @@ img.bg {
   z-index: -1;
 }
 
-.storyText{
-  color: white;
-  background-color: rgba(0, 0, 0, 0.6);
-  font-size: 16px;
-}
 
 .homeText{
   color: white;
   background-color: rgba(0, 0, 0, 0.6);
+}
+.storyText{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  margin-top: 25%;
+  padding: 2%;
+  margin-bottom: 20px;
+}
+
+.nameText{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  
 }

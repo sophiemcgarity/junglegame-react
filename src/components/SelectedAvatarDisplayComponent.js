@@ -16,7 +16,7 @@ class SelectedAvatarDisplay extends Component{
       <React.Fragment>
           <div>
             <img src={renderPic} alt="pic" className="rounded-circle" style={{height: "100px", width: "85px", border: "solid white 2px"}}></img>
-            <h4 className="storyText aboutGame align-text-middle mt-2">{renderName}</h4>  
+            <h4 className="nameText aboutGame align-text-middle mt-2">{renderName}</h4>  
           </div>
           
           
