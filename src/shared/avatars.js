@@ -11,7 +11,7 @@ export const AVATARS = [
         id: 1,
         name: 'Franklin Moose Finbon',
         description: 'Expert in weapons and zoology',
-        image: 'assets/images/man1.png',
+        image: 'assets/images/man2.png',
         strengths: 'zoology, weapons valet',
         weaknesses: "cake, speed, strength"
     },
@@ -19,7 +19,7 @@ export const AVATARS = [
         id: 2,
         name: 'Professor Shelly Oberon',
         description: 'Cartographer-code-breaker-curvy genius',
-        image: 'assets/images/man1.png',
+        image: 'assets/images/manp.png',
         strengths: 'cartography, archaeology, paleontology',
         weaknesses: 'endurance'
     },
@@ -27,7 +27,7 @@ export const AVATARS = [
         id: 3,
         name: 'Ruby Roundhouse',
         description: 'Fighter-killer of men',
-        image: 'assets/images/man1.png',
+        image: 'assets/images/girl.png',
         strengths: 'karate, tai chi, aikido, dance fighting',
         weaknesses: 'venom'
     }

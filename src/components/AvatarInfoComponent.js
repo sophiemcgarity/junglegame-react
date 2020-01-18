@@ -1,26 +1,36 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle, Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 
-class AvatarInfo extends Component {
-
-    renderAvatar(avatar){
+    function RenderAvatar({avatar}){
         return(
-
-            <div className="col-md-5 m-1">
-                <Card onClick={() => this.onAvatarSelect(avatar)}>
-                    <CardImg width="30px" height="100%" src={avatar.image} alt={avatar.name} />
-                </Card>
+            <div className="row bgrow align-items-center">
+                <div className="col-sm-4">
+                    <img className="img-fluid" src={avatar.image} alt={avatar.name} />
+                </div>
+                <div className="col-sm-4 homeText">
+                        <h2>{avatar.name}</h2>
+                        <p>{avatar.description}</p>
+                        <p><strong>Strengths: </strong>{avatar.strengths}</p>
+                        <p><strong>Weaknesses: </strong>{avatar.weaknesses}</p>
+                </div>
+                <div className="col-sm-4">
+                    <Button className="btn btn-success btn-lg m-2"><Link className="text-white" to='/home'><h3>Go Back</h3></Link></Button>
+                    <Button className="btn btn-success btn-lg m-2"><Link className="text-white" to='/gamepage'><h3 >Start</h3></Link></Button>
+                    
+                </div>
             </div>
+        
         );
     }
 
-    renderAvatarData(avatar){
+    function RenderAvatarData({avatar}){
         if(avatar){
         return(
 
             <div className="col-md-5 m-1">
-                <Card onClick={() => this.onAvatarSelect(avatar)}>
+                <Card className="bg-success">
                     <CardTitle>
                         <h2>{avatar.name}</h2>
                     </CardTitle>
@@ -41,21 +51,21 @@ class AvatarInfo extends Component {
     }
 
 
-    render() {
-        if(this.props.avatar){
+    function AvatarInfo(props) {
+        if(props.avatar){
             return (
                 <div className="container">
                     <div className="row">
-                        {this.renderAvatar(this.props.avatar)}
-                        {this.renderAvatarData(this.props.avatar)}
+                        <RenderAvatar avatar={props.avatar}/>
+                        {/* <RenderAvatarData avatar={props.avatar}/> */}
                     </div>
                 </div>
             );
         }
             return(
-                <div />
+                <div>No avatar selected</div>
     );
 }
-}
+
 
 export default AvatarInfo;

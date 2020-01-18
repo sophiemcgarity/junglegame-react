@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+img.bg {
+  min-width: 100%;
+  min-width: 1024px;
+
+  width: 100%;
+  height: auto;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+.homeText{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.storyText{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  margin-top: 25%;
+  padding: 2%;
+  margin-bottom: 20px;
+}
+
+.nameText{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  
+}
