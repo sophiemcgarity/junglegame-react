@@ -29,7 +29,7 @@ export const PAGES = [
     {
         id: "car",
         story: "You run away from the hippos narrowly escaping their chomping jaws. As you flee a car pulls up alongside you. “Get in” the stranger shouts. You and the two remaining adventurers jump straight in.",
-        image: "/assets/images/hippo.jpg",
+        image: "/assets/images/jeep.jpg",
         button1: "Introduce yourself.",
         button1Id: "storyGoal",
         button2: " ",
@@ -51,7 +51,7 @@ export const PAGES = [
         button1: "Reset",
         button1Id: "start",
         button2: " ",
-        button2Id: " ",
+        button2Id: " "
     },
     {
         id: "findDesert",
@@ -60,7 +60,7 @@ export const PAGES = [
         button1: "Jump off a cliff to try and escape.",
         button1Id: "cliffJump",
         button2: "Try and outrun the gang back through the trees.",
-        button2Id: "bikerDeath",
+        button2Id: "bikerDeath"
     },
     {
         id: "bikerDeath",
@@ -69,6 +69,7 @@ export const PAGES = [
         button1: "Reset",
         button1Id: "start",
         button2: " ",
+        button2Id: " "
     },
     {
         id: "cliffJump",

@@ -6,8 +6,6 @@ import Home from './HomeComponent';
 import SelectedAvatarDisplay from './SelectedAvatarDisplayComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
-
-
 class Main extends Component {
     constructor(props) {
         super(props);
@@ -24,13 +22,6 @@ class Main extends Component {
     onAvatarSelect(avatarId) {
         this.setState({ selectedAvatar: avatarId });
       }
-
-
-    // onPageSelect(pageId){
-    //      this.setState({selectedPage: pageId});
-    // }
-    // */
-
 
     render() {
 
