@@ -5,7 +5,6 @@
   text-align: center;
 }
 
-
 .App-link {
   color: #09d3ac;
 }
@@ -14,11 +13,48 @@ h1{
   font-family: 'Press Start 2P', cursive;
 }
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+img.bg {
+  min-width: 100%;
+  min-width: 1024px;
+
+  width: 100%;
+  height: auto;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .aboutGame {
   font-family: 'Courier Prime', monospace;
   color: white;
   background-color: rgba(0, 0, 0, 0.6);
+}
 
+.homeText{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.storyText{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+  margin-top: 25%;
+  padding: 2%;
+  margin-bottom: 20px;
+}
+
+.nameText{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
 }
 
 .bg{
@@ -28,6 +64,7 @@ h1{
   z-index:-1;
 
 } 
+
 .bgrow{
   background-image: url(shared/jungle.jpg);
   background-size: cover;
@@ -41,6 +78,7 @@ h1{
   border-radius: 50px;
   margin: 10px;
 }
+
 
 .animBtn:hover {
   animation: stretch 1.8s;
@@ -78,3 +116,54 @@ h1{
   }
 }
 
+
+.page {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active{
+  opacity: 1;
+  transition: opacity 400ms linear 100ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 150ms linear;
+}
+
+.pageout-enter{
+  opacity: 0;
+  z-index: 1;
+}
+
+.pageout-enter-active{
+  opacity: 1;
+  transition: opacity 1000ms linear 200ms;
+}
+
+.pageout-exit{
+  opacity: 1;
+}
+
+.pageout-exit-active{
+  opacity: 0;
+  transition: opacity 1000ms linear 200ms;
+}
+
+.homeBtn{
+  margin-top: 3%;
+  margin-left: 90%;
+}

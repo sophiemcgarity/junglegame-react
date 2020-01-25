@@ -5,8 +5,8 @@ export const PAGES = [
         image: "/assets/images/jungle.jpg",
         button1: "Begin the adventure!",
         button1Id: "river",
-        button2: " ",
-        button2Id: " "
+        button2: "",
+        button2Id: "",
     },
     {
         id: "river",
@@ -23,8 +23,8 @@ export const PAGES = [
         image: "/assets/images/hippo.jpg",
         button1: "Reset",
         button1Id: "start",
-        button2: " ",
-        button2Id: " ",
+        button2: "",
+        button2Id: "",
     },
     {
         id: "car",
@@ -32,8 +32,8 @@ export const PAGES = [
         image: "/assets/images/jeep.jpg",
         button1: "Introduce yourself.",
         button1Id: "storyGoal",
-        button2: " ",
-        button2Id: " "
+        button2: "",
+        button2Id: ""
     },
     {
         id: "storyGoal",
@@ -50,8 +50,8 @@ export const PAGES = [
         image: "/assets/images/tent.jpg",
         button1: "Reset",
         button1Id: "start",
-        button2: " ",
-        button2Id: " "
+        button2: "",
+        button2Id: ""
     },
     {
         id: "findDesert",
@@ -68,8 +68,8 @@ export const PAGES = [
         image: "/assets/images/biker.jpg",
         button1: "Reset",
         button1Id: "start",
-        button2: " ",
-        button2Id: " "
+        button2: "",
+        button2Id: ""
     },
     {
         id: "cliffJump",
@@ -95,8 +95,8 @@ export const PAGES = [
         image: "/assets/images/redSnake.jpg",
         button1: "Reset",
         button1Id: "start",
-        button2: " ",
-        button2Id: " ",
+        button2: "",
+        button2Id: "",
     },
     {
         id: "blueDoorDeath",
@@ -104,8 +104,8 @@ export const PAGES = [
         image: "/assets/images/wildDogs.jpg",
         button1: "Reset",
         button1Id: "start",
-        button2: " ",
-        button2Id: " ",
+        button2: "",
+        button2Id: "",
     },
     {
         id: "basketRoom",
@@ -113,8 +113,8 @@ export const PAGES = [
         image: "/assets/images/statue.jpg",
         button1: "Head to the jaguar statue to save Jumanji.",
         button1Id: "statue",
-        button2: " ",
-        button2Id: " ",
+        button2: "",
+        button2Id: "",
     },
     {
         id: "statue",
@@ -122,8 +122,8 @@ export const PAGES = [
         image: "/assets/images/statue.jpg",
         button1: "Place the jewel into the jaguar's eye.",
         button1Id: "win",
-        button2: " ",
-        button2Id: " ",
+        button2: "",
+        button2Id: "",
     },
     {
         id: "win",
@@ -131,7 +131,7 @@ export const PAGES = [
         image: "/assets/images/winning.jpg",
         button1: "Reset",
         button1Id: "start",
-        button2: " ",
-        button2Id: " ",
+        button2: "",
+        button2Id: "",
     } 
 ]
