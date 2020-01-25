@@ -26,7 +26,7 @@ export const AVATARS = [
     {
         id: 3,
         name: 'Ruby Roundhouse',
-        description: 'Fighter-killer of men',
+        description: 'Fighter-killer of men, Miss Alabama 1986',
         image: 'assets/images/girl.png',
         strengths: 'karate, tai chi, aikido, dance fighting',
         weaknesses: 'venom'

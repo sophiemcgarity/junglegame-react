@@ -3,7 +3,15 @@ import React, { Component } from 'react';
 class SelectedAvatarDisplay extends Component{
   constructor(props) {
     super(props);
+
   }
+
+  toggleModal() {
+    this.setState({
+      isModalOpen: !this.state.isModalOpen
+    });
+  }
+
   render() {
 
     const name = this.props.avatars.filter(val => val.id === this.props.selectedAvatar);

@@ -3,7 +3,6 @@ import GamePage from './GamePageComponent';
 import { AVATARS } from '../shared/avatars';
 import { PAGES } from '../shared/pages';
 import Home from './HomeComponent';
-import SelectedAvatarDisplay from './SelectedAvatarDisplayComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
@@ -18,18 +17,32 @@ class Main extends Component {
         }
 
     }
+      
+    componentDidUpdate(){
+        window.scrollBy(0, 2000);
+    }
 
     onAvatarSelect(avatarId) {
         this.setState({ selectedAvatar: avatarId });
+
+      }
+
+      onAvatarReset() {
+        this.setState({ selectedAvatar: null });
+        
       }
 
     render() {
-
+        
         return (
             <React.Fragment>
                 <Switch>
-                    <Route exact path='/home' render={() => <Home pages={this.state.pages} avatars={this.state.avatars} selectedAvatar={this.state.selectedAvatar} 
-                    onClick={avatarId => this.onAvatarSelect(avatarId)} avatar={this.state.avatars.filter(avatar => avatar.id === this.state.selectedAvatar)[0]}
+                    <Route exact path='/home' render={() => <Home 
+                        pages={this.state.pages} 
+                        avatars={this.state.avatars} selectedAvatar={this.state.selectedAvatar} 
+                        onClick={avatarId => this.onAvatarSelect(avatarId)} 
+                        onBackClick={()=> this.onAvatarReset()}
+                        avatar={this.state.avatars.filter(avatar => avatar.id === this.state.selectedAvatar)[0]}
                     />} />
 
                     <Route exact path='/gamepage' render={() => <GamePage pages={this.state.pages} avatars={this.state.avatars} selectedAvatar={this.state.selectedAvatar}/>} />

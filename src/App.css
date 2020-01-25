@@ -24,7 +24,9 @@ h1{
 .bg{
   background-image: url(shared/jungle.jpg);
   background-size: cover;
+  min-height: 1000px;
   z-index:-1;
+
 } 
 .bgrow{
   background-image: url(shared/jungle.jpg);
@@ -38,5 +40,41 @@ h1{
   border: 2px white solid;
   border-radius: 50px;
   margin: 10px;
+}
+
+.animBtn:hover {
+  animation: stretch 1.8s;
+}
+@keyframes stretch{
+  25%{
+    transform: scale(1.3, 0.6);
+  }
+  35%{
+    transform: scale(0.6, 1.3);
+  }
+  50%{
+    transform: scale(1.1, 0.9);
+  }
+  65%{
+    transform: scale(0.9, 1.02);
+  }
+}
+
+.animCard:hover {
+  animation: stretch 2s;
+}
+@keyframes stretch{
+  25%{
+    transform: scale(1.1, 0.9);
+  }
+  35%{
+    transform: scale(0.9, 1.02);
+  }
+  50%{
+    transform: scale(1.1, 0.9);
+  }
+  65%{
+    transform: scale(0.9, 1.02);
+  }
 }
 
