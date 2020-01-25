@@ -45,11 +45,22 @@ class GamePage extends Component {
 
 
         return (
-            <div className="container">
-                <div className="row">
+           
+            <React.Fragment>
+                <TransitionGroup>
+                    <CSSTransition
+                        key={this.state.selectedPage}
+                        timeout={1000}
+                        classNames="pageout"
+                    >
+                        <div className="container page">
+                        <div className="row">
                     <div className="col-3">
                         <img onClick={this.toggleModal} className="imageCorner" src={yourAvatarImage} />
                         <p className="nameText">{yourAvatarName}</p>
+                    </div>
+                    <div className="col">
+                        <Button href="/home" className="btn-success btn-lg text-white animBtn homeBtn">Reset Avatar</Button>
                     </div>
                     <Modal  style={{borderRadius: '20px'}} className='text-center text-white'  isOpen={this.state.isModalOpen} toggle={this.toggleModal} >
                      <ModalBody className='bg-success' style={{borderRadius: '5px'}}>
@@ -63,38 +74,8 @@ class GamePage extends Component {
                     </Modal>
                     
                 </div>
-                <p className="storyText">{currentPage.story.replace('player', yourAvatarName)}</p>
-                <div className="row">
-                    <div className="col btn1">
-                        <Button onClick={() => this.onPageChange(currentPage.button1Id)}>{currentPage.button1}</Button>
-                        
-                    </div>
-                    <div className="col btn2">
-                        <Button onClick={() => this.onPageChange(currentPage.button2Id)}>{currentPage.button2}</Button>
-                    </div>
-                </div>
-                
-                <img src={currentPage.image} className="bg" />
-            </div>
-
-            <React.Fragment>
-                <TransitionGroup>
-                    <CSSTransition
-                        key={this.state.selectedPage}
-                        timeout={1000}
-                        classNames="pageout"
-                    >
-                        <div className="container page">
                             <img src={currentPage.image} className="bg" alt="Background" />
-                            <div className="row">
-                                <div className="col-3">
-                                    <img className="imageCorner" src={yourAvatarImage} alt="Avatar" />
-                                    <p className="nameText">{yourAvatarName}</p>
-                                </div>
-                                <div className="col">
-                                    <Button href="/home" className="btn-success btn-lg text-white animBtn homeBtn">Reset Avatar</Button>
-                                </div>
-                            </div>
+                            
                             <p className="storyText">{currentPage.story}</p>
                             <div className="row">
                                 <div className="col btn1">
@@ -120,4 +101,6 @@ class GamePage extends Component {
     }
 
 }
+
+export default GamePage;
 
