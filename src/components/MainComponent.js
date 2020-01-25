@@ -17,13 +17,23 @@ class Main extends Component {
             selectedPage: 0
         }
     }
+      
+    componentDidUpdate(){
+        window.scrollBy(0, 2000);
+    }
 
     onAvatarSelect(avatarId) {
         this.setState({ selectedAvatar: avatarId });
     }
 
-    render() {
 
+      onAvatarReset() {
+        this.setState({ selectedAvatar: null });
+        
+      }
+
+    render() {
+        
         return (
             <Route render={({location}) => (
                 <TransitionGroup>
@@ -35,7 +45,7 @@ class Main extends Component {
                     <Switch location={location}>
 
                         <Route exact path='/home' render={() => <Home pages={this.state.pages} avatars={this.state.avatars} selectedAvatar={this.state.selectedAvatar}
-                            onClick={avatarId => this.onAvatarSelect(avatarId)} avatar={this.state.avatars.filter(avatar => avatar.id === this.state.selectedAvatar)[0]}
+                            onClick={avatarId => this.onAvatarSelect(avatarId)} onBackClick={()=> this.onAvatarReset()} avatar={this.state.avatars.filter(avatar => avatar.id === this.state.selectedAvatar)[0]}
                         />} />
 
                         <Route exact path='/gamepage' render={() => <GamePage pages={this.state.pages} avatars={this.state.avatars} selectedAvatar={this.state.selectedAvatar} />} />
@@ -47,6 +57,7 @@ class Main extends Component {
             </TransitionGroup>
             )} />
         );
+
     }
 }
 
