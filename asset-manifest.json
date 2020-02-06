@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/junglegame-react/App.js/static/css/main.aff5a55f.chunk.css",
-    "main.js": "/junglegame-react/App.js/static/js/main.e55c7624.chunk.js",
-    "main.js.map": "/junglegame-react/App.js/static/js/main.e55c7624.chunk.js.map",
-    "runtime-main.js": "/junglegame-react/App.js/static/js/runtime-main.ba58c2a1.js",
-    "runtime-main.js.map": "/junglegame-react/App.js/static/js/runtime-main.ba58c2a1.js.map",
-    "static/css/2.9e751ce3.chunk.css": "/junglegame-react/App.js/static/css/2.9e751ce3.chunk.css",
-    "static/js/2.db2afd0d.chunk.js": "/junglegame-react/App.js/static/js/2.db2afd0d.chunk.js",
-    "static/js/2.db2afd0d.chunk.js.map": "/junglegame-react/App.js/static/js/2.db2afd0d.chunk.js.map",
-    "index.html": "/junglegame-react/App.js/index.html",
-    "precache-manifest.411d3021d6a8ac34a17ecb17edbb221a.js": "/junglegame-react/App.js/precache-manifest.411d3021d6a8ac34a17ecb17edbb221a.js",
-    "service-worker.js": "/junglegame-react/App.js/service-worker.js",
-    "static/css/2.9e751ce3.chunk.css.map": "/junglegame-react/App.js/static/css/2.9e751ce3.chunk.css.map",
-    "static/css/main.aff5a55f.chunk.css.map": "/junglegame-react/App.js/static/css/main.aff5a55f.chunk.css.map",
-    "static/media/font-awesome.css": "/junglegame-react/App.js/static/media/fontawesome-webfont.fee66e71.woff",
-    "static/media/App.css": "/junglegame-react/App.js/static/media/jungle.3d7c283d.jpg"
+    "main.css": "/junglegame-react/static/css/main.66a5de3d.chunk.css",
+    "main.js": "/junglegame-react/static/js/main.3949eebc.chunk.js",
+    "main.js.map": "/junglegame-react/static/js/main.3949eebc.chunk.js.map",
+    "runtime-main.js": "/junglegame-react/static/js/runtime-main.d8093808.js",
+    "runtime-main.js.map": "/junglegame-react/static/js/runtime-main.d8093808.js.map",
+    "static/css/2.cf39d682.chunk.css": "/junglegame-react/static/css/2.cf39d682.chunk.css",
+    "static/js/2.898b617d.chunk.js": "/junglegame-react/static/js/2.898b617d.chunk.js",
+    "static/js/2.898b617d.chunk.js.map": "/junglegame-react/static/js/2.898b617d.chunk.js.map",
+    "index.html": "/junglegame-react/index.html",
+    "precache-manifest.7ad988ee283065113f4ad9350f078408.js": "/junglegame-react/precache-manifest.7ad988ee283065113f4ad9350f078408.js",
+    "service-worker.js": "/junglegame-react/service-worker.js",
+    "static/css/2.cf39d682.chunk.css.map": "/junglegame-react/static/css/2.cf39d682.chunk.css.map",
+    "static/css/main.66a5de3d.chunk.css.map": "/junglegame-react/static/css/main.66a5de3d.chunk.css.map",
+    "static/media/font-awesome.css": "/junglegame-react/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/App.css": "/junglegame-react/static/media/jungle.3d7c283d.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ba58c2a1.js",
-    "static/css/2.9e751ce3.chunk.css",
-    "static/js/2.db2afd0d.chunk.js",
-    "static/css/main.aff5a55f.chunk.css",
-    "static/js/main.e55c7624.chunk.js"
+    "static/js/runtime-main.d8093808.js",
+    "static/css/2.cf39d682.chunk.css",
+    "static/js/2.898b617d.chunk.js",
+    "static/css/main.66a5de3d.chunk.css",
+    "static/js/main.3949eebc.chunk.js"
   ]
 }
