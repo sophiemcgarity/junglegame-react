@@ -1,7 +1,7 @@
 export const PAGES = [
     {
         id: "start",
-        story: "You wake up and find yourself in a jungle surrounded by three equally confused people. You see their names floating above their heads. You look up and see your own name, player. ",
+        story: "You wake up and find yourself in a jungle surrounded by three equally confused people. You see their names floating above their heads. You look up and see your own name. ",
         image: "/assets/images/jungle.jpg",
         button1: "Begin the adventure!",
         button1Id: "river",
@@ -37,7 +37,7 @@ export const PAGES = [
     },
     {
         id: "storyGoal",
-        story: "Hello my name is player. The stranger greets you warmly. “My name is Nigel and you lucky adventurers have been chosen to lift the curse on Jumanji. You must take this jewel to the jaguar statue”. He hands you a jewel. “And here take this map, sorry its torn but maybe you can find the other part” he adds. You take the map. “Well this is your stop, good luck out there” Nigel says as he waves goodbye. You get out of the car and discuss what to do.",
+        story: "Hello. The stranger greets you warmly. “My name is Nigel and you lucky adventurers have been chosen to lift the curse on Jumanji. You must take this jewel to the jaguar statue”. He hands you a jewel. “Well this is your stop, good luck out there” Nigel says as he waves goodbye. You get out of the car and discuss what to do.",
         image: "/assets/images/jeep.jpg",
         button1: "This is too hard, lets just go home.",
         button1Id: "giveUp",

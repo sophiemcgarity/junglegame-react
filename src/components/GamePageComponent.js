@@ -50,7 +50,7 @@ class GamePage extends Component {
                 <TransitionGroup>
                     <CSSTransition
                         key={this.state.selectedPage}
-                        timeout={1000}
+                        timeout={2000}
                         classNames="pageout"
                     >
                         <div className="container page">
@@ -72,7 +72,6 @@ class GamePage extends Component {
                          <strong>Weaknesses:</strong>{yourAvatar.weaknesses}
                         </ModalBody>
                     </Modal>
-                    
                 </div>
                             <img src={currentPage.image} className="bg" alt="Background" />
                             
@@ -83,7 +82,6 @@ class GamePage extends Component {
                                 </div>
                                 <div className="col btn2">
                                  {currentPage.button2Id && <Button className="btn-lg" onClick={() => this.onPageChange(currentPage.button2Id)}>{currentPage.button2}</Button> }
-                                 
                                 </div>
                             </div>
                         </div>

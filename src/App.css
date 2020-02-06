@@ -132,7 +132,7 @@ img.bg {
 .fade-appear-active,
 .fade-enter.fade-enter-active{
   opacity: 1;
-  transition: opacity 400ms linear 100ms;
+  transition: opacity 500ms linear 500ms;
 }
 
 .fade-exit {
@@ -141,7 +141,7 @@ img.bg {
 
 .fade-exit.fade-exit-active {
   opacity: 0;
-  transition: opacity 150ms linear;
+  transition: opacity 500ms linear 500ms;
 }
 
 .pageout-enter{
@@ -151,7 +151,7 @@ img.bg {
 
 .pageout-enter-active{
   opacity: 1;
-  transition: opacity 1000ms linear 200ms;
+  transition: opacity 1500ms linear 500ms;
 }
 
 .pageout-exit{
@@ -160,7 +160,7 @@ img.bg {
 
 .pageout-exit-active{
   opacity: 0;
-  transition: opacity 1000ms linear 200ms;
+  transition: opacity 1500ms linear 500ms;
 }
 
 .homeBtn{

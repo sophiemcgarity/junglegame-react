@@ -1,7 +1,7 @@
 export const AVATARS = [
     {
         id: 0,
-        name: 'Dr.Smolder Bravestone',
+        name: 'Dr. Smolder Bravestone',
         description: 'Archeologist, international explorer',
         image: 'assets/images/man1.png',
         strengths: 'fearless, climbing, speed, boomerang, smoldering intensity',

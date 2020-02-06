@@ -39,7 +39,7 @@ class Main extends Component {
                 <TransitionGroup>
                 <CSSTransition
                     key={location.key}
-                    timeout={500}
+                    timeout={1000}
                     classNames='fade'
                 >  
                     <Switch location={location}>
