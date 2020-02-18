@@ -17,8 +17,8 @@ class Main extends Component {
             selectedPage: 0
         }
     }
-      
-    componentDidUpdate(){
+
+    componentDidUpdate() {
         window.scrollBy(0, 2000);
     }
 
@@ -27,37 +27,38 @@ class Main extends Component {
     }
 
 
-      onAvatarReset() {
+    onAvatarReset() {
         this.setState({ selectedAvatar: null });
-        
-      }
+
+    }
 
     render() {
-        
+
         return (
-            <Route render={({location}) => (
+            
+            <Route render={({ location }) => (
                 <TransitionGroup>
-                <CSSTransition
-                    key={location.key}
-                    timeout={1000}
-                    classNames='fade'
-                >  
-                    <Switch location={location}>
+                    <CSSTransition
+                        key={location.key}
+                        timeout={1000}
+                        classNames='fade'
+                    >
+                        <Switch location={location}>
 
-                        <Route exact path='/home' render={() => <Home pages={this.state.pages} avatars={this.state.avatars} selectedAvatar={this.state.selectedAvatar}
-                            onClick={avatarId => this.onAvatarSelect(avatarId)} onBackClick={()=> this.onAvatarReset()} avatar={this.state.avatars.filter(avatar => avatar.id === this.state.selectedAvatar)[0]}
-                        />} />
+                            <Route exact path='/home' render={() => <Home pages={this.state.pages} avatars={this.state.avatars} selectedAvatar={this.state.selectedAvatar}
+                                onClick={avatarId => this.onAvatarSelect(avatarId)} onBackClick={() => this.onAvatarReset()} avatar={this.state.avatars.filter(avatar => avatar.id === this.state.selectedAvatar)[0]}
+                            />} 
+                            />
 
-                        <Route exact path='/gamepage' render={() => <GamePage pages={this.state.pages} avatars={this.state.avatars} selectedAvatar={this.state.selectedAvatar} />} />
+                            <Route exact path='/gamepage' render={() => <GamePage pages={this.state.pages} avatars={this.state.avatars} selectedAvatar={this.state.selectedAvatar} />} />
 
-                        <Redirect to='/home' render={() => <Home pages={this.state.pages} />} />
+                            <Redirect to='/home' render={() => <Home pages={this.state.pages} />} />
 
-                    </Switch>
-                </CSSTransition>                      
-            </TransitionGroup>
+                        </Switch>
+                    </CSSTransition>
+                </TransitionGroup>
             )} />
         );
-
     }
 }
 
