@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "625d2c6a3dca0c1dbda8ce9ee2834bb5",
+    "revision": "bdaeb1d4dce9a9c18bcce753fdeca25f",
     "url": "/junglegame-react/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/junglegame-react/static/css/2.cf39d682.chunk.css"
   },
   {
-    "revision": "ec3b3e4d90705152c5ad",
+    "revision": "a34b293be1e04e893fb6",
     "url": "/junglegame-react/static/css/main.66a5de3d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/junglegame-react/static/js/2.ba99c56e.chunk.js"
   },
   {
-    "revision": "ec3b3e4d90705152c5ad",
-    "url": "/junglegame-react/static/js/main.2a8d09de.chunk.js"
+    "revision": "a34b293be1e04e893fb6",
+    "url": "/junglegame-react/static/js/main.a2586795.chunk.js"
   },
   {
     "revision": "da0e01f9ec1242d55221",

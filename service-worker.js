@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/junglegame-react/precache-manifest.9a84c9801bd9e4709a09a113d83e0e8f.js"
+  "/junglegame-react/precache-manifest.8b6caf062dc738ffdab45d6b522d83ed.js"
 );
 
 self.addEventListener('message', (event) => {

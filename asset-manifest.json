@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/junglegame-react/static/css/main.66a5de3d.chunk.css",
-    "main.js": "/junglegame-react/static/js/main.2a8d09de.chunk.js",
-    "main.js.map": "/junglegame-react/static/js/main.2a8d09de.chunk.js.map",
+    "main.js": "/junglegame-react/static/js/main.a2586795.chunk.js",
+    "main.js.map": "/junglegame-react/static/js/main.a2586795.chunk.js.map",
     "runtime-main.js": "/junglegame-react/static/js/runtime-main.d8093808.js",
     "runtime-main.js.map": "/junglegame-react/static/js/runtime-main.d8093808.js.map",
     "static/css/2.cf39d682.chunk.css": "/junglegame-react/static/css/2.cf39d682.chunk.css",
     "static/js/2.ba99c56e.chunk.js": "/junglegame-react/static/js/2.ba99c56e.chunk.js",
     "static/js/2.ba99c56e.chunk.js.map": "/junglegame-react/static/js/2.ba99c56e.chunk.js.map",
     "index.html": "/junglegame-react/index.html",
-    "precache-manifest.9a84c9801bd9e4709a09a113d83e0e8f.js": "/junglegame-react/precache-manifest.9a84c9801bd9e4709a09a113d83e0e8f.js",
+    "precache-manifest.8b6caf062dc738ffdab45d6b522d83ed.js": "/junglegame-react/precache-manifest.8b6caf062dc738ffdab45d6b522d83ed.js",
     "service-worker.js": "/junglegame-react/service-worker.js",
     "static/css/2.cf39d682.chunk.css.map": "/junglegame-react/static/css/2.cf39d682.chunk.css.map",
     "static/css/main.66a5de3d.chunk.css.map": "/junglegame-react/static/css/main.66a5de3d.chunk.css.map",
@@ -39,6 +39,6 @@
     "static/css/2.cf39d682.chunk.css",
     "static/js/2.ba99c56e.chunk.js",
     "static/css/main.66a5de3d.chunk.css",
-    "static/js/main.2a8d09de.chunk.js"
+    "static/js/main.a2586795.chunk.js"
   ]
 }
