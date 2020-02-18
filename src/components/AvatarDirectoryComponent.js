@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Card, CardImg, CardBody, CardTitle, CardText } from 'reactstrap';
+import React from 'react';
+import { Card, CardImg, CardBody, CardTitle} from 'reactstrap';
 import { fadeIn } from 'react-animations';
 import styled, { keyframes } from 'styled-components';
 import { FadeTransform } from 'react-animation-components';
