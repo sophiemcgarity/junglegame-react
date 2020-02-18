@@ -1,26 +1,44 @@
 {
   "files": {
     "main.css": "/junglegame-react/static/css/main.66a5de3d.chunk.css",
-    "main.js": "/junglegame-react/static/js/main.3949eebc.chunk.js",
-    "main.js.map": "/junglegame-react/static/js/main.3949eebc.chunk.js.map",
+    "main.js": "/junglegame-react/static/js/main.2a8d09de.chunk.js",
+    "main.js.map": "/junglegame-react/static/js/main.2a8d09de.chunk.js.map",
     "runtime-main.js": "/junglegame-react/static/js/runtime-main.d8093808.js",
     "runtime-main.js.map": "/junglegame-react/static/js/runtime-main.d8093808.js.map",
     "static/css/2.cf39d682.chunk.css": "/junglegame-react/static/css/2.cf39d682.chunk.css",
-    "static/js/2.898b617d.chunk.js": "/junglegame-react/static/js/2.898b617d.chunk.js",
-    "static/js/2.898b617d.chunk.js.map": "/junglegame-react/static/js/2.898b617d.chunk.js.map",
+    "static/js/2.ba99c56e.chunk.js": "/junglegame-react/static/js/2.ba99c56e.chunk.js",
+    "static/js/2.ba99c56e.chunk.js.map": "/junglegame-react/static/js/2.ba99c56e.chunk.js.map",
     "index.html": "/junglegame-react/index.html",
-    "precache-manifest.7ad988ee283065113f4ad9350f078408.js": "/junglegame-react/precache-manifest.7ad988ee283065113f4ad9350f078408.js",
+    "precache-manifest.9a84c9801bd9e4709a09a113d83e0e8f.js": "/junglegame-react/precache-manifest.9a84c9801bd9e4709a09a113d83e0e8f.js",
     "service-worker.js": "/junglegame-react/service-worker.js",
     "static/css/2.cf39d682.chunk.css.map": "/junglegame-react/static/css/2.cf39d682.chunk.css.map",
     "static/css/main.66a5de3d.chunk.css.map": "/junglegame-react/static/css/main.66a5de3d.chunk.css.map",
+    "static/media/baskets.jpg": "/junglegame-react/static/media/baskets.11ebfa37.jpg",
+    "static/media/biker.jpg": "/junglegame-react/static/media/biker.783315ab.jpg",
+    "static/media/carRide.jpg": "/junglegame-react/static/media/carRide.823f7cef.jpg",
+    "static/media/chapel.jpg": "/junglegame-react/static/media/chapel.c0896f1a.jpg",
+    "static/media/desertBiker.jpg": "/junglegame-react/static/media/desertBiker.306ef152.jpg",
     "static/media/font-awesome.css": "/junglegame-react/static/media/fontawesome-webfont.fee66e71.woff",
-    "static/media/App.css": "/junglegame-react/static/media/jungle.3d7c283d.jpg"
+    "static/media/girl.png": "/junglegame-react/static/media/girl.70b4f8e4.png",
+    "static/media/hippo.jpg": "/junglegame-react/static/media/hippo.d66c35a9.jpg",
+    "static/media/jeep.jpg": "/junglegame-react/static/media/jeep.6a45ad7f.jpg",
+    "static/media/App.css": "/junglegame-react/static/media/jungle.3d7c283d.jpg",
+    "static/media/man1.png": "/junglegame-react/static/media/man1.d63c6493.png",
+    "static/media/man2.png": "/junglegame-react/static/media/man2.a80a3a91.png",
+    "static/media/manp.png": "/junglegame-react/static/media/manp.ca24aa4e.png",
+    "static/media/market.jpg": "/junglegame-react/static/media/market.c5b6b996.jpg",
+    "static/media/redSnake.jpg": "/junglegame-react/static/media/redSnake.4d5e5ac1.jpg",
+    "static/media/river.jpg": "/junglegame-react/static/media/river.2bbb44a7.jpg",
+    "static/media/statue.jpg": "/junglegame-react/static/media/statue.8f099656.jpg",
+    "static/media/tent.jpg": "/junglegame-react/static/media/tent.6ea0d727.jpg",
+    "static/media/wildDogs.jpg": "/junglegame-react/static/media/wildDogs.111ab3ba.jpg",
+    "static/media/winning.jpg": "/junglegame-react/static/media/winning.5ca2daa4.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d8093808.js",
     "static/css/2.cf39d682.chunk.css",
-    "static/js/2.898b617d.chunk.js",
+    "static/js/2.ba99c56e.chunk.js",
     "static/css/main.66a5de3d.chunk.css",
-    "static/js/main.3949eebc.chunk.js"
+    "static/js/main.2a8d09de.chunk.js"
   ]
 }
